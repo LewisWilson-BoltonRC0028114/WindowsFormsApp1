@@ -12,6 +12,13 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        void printNums(List<int> ns)
+        {
+            foreach (int i in ns)
+            {
+                richTextBox1.AppendText(i + ",");
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +36,11 @@ namespace WindowsFormsApp1
             {
                 richTextBox1.AppendText(i + ",");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }       
                 
